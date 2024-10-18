@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expandable Box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="product-options">
+        <div class="option">
+            <label for="unit1"><b>1 Unit</b> <span class="offer">(10% Off)</span></label>
+            <span class="price">$10.00 USD</span>
+            <input type="radio" name="units" class="radio-btn" value="1">
+            <span class="checkmark"></span>
+            <p>Standard Price <del class="depricate">$24.00 USD</del> </p>
+            <div class="details">
+                <div class="size-select">
+                    <label for="size1">Size</label>
+                    <label for="color1">Color</label>
+                </div>
+                <div class="size-color-options">
+                    <select id="size1">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <select id="color1">
+                        <option value="black">Black</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                    </select>
+                </div>
+                <div class="size-color-options">
+                    <select id="size2">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <select id="color2">
+                        <option value="black">Black</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="option default-selected">
+            <label for="unit2"><b>2 Units</b> <span class="offer">(20% Off)</span></label>
+            <div class="label-title most-popular">Most Popular</div>
+            <input type="radio" name="units" class="radio-btn" value="2">
+            <span class="checkmark"></span>
+            <span class="price">$18.00 USD</span>
+            <p>Standard Price <del class="depricate">$24.00 USD</del> </p>
+            <div class="details">
+                <div class="size-select">
+                    <label for="size1">Size</label>
+                    <label for="color1">Color</label>
+                </div>
+                <div class="size-color-options">
+                    <select id="size1">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <select id="color1">
+                        <option value="black">Black</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                    </select>
+                </div>
+                <div class="size-color-options">
+                    <select id="size2">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <select id="color2">
+                        <option value="black">Black</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="option">
+            <label for="unit3"><b>3 Units</b> <span class="offer">(30% Off)</span></label>
+            <input type="radio" name="units" class="radio-btn" value="3">
+            <span class="checkmark"></span>
+            <span class="price">$24.00 USD</span>
+            <p>Standard Price <del class="depricate">$24.00 USD</del> </p>
+            <div class="details">
+                <div class="size-select">
+                    <label for="size1">Size</label>
+                    <label for="color1">Color</label>
+                </div>
+                <div class="size-color-options">
+                    <select id="size1">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <select id="color1">
+                        <option value="black">Black</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                    </select>
+                </div>
+                <div class="size-color-options">
+                    <select id="size2">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <select id="color2">
+                        <option value="black">Black</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="total">
+        <div class="total-delivery">
+            <span class="free-delivery">Free Delivery</span>
+            <span id="total-price">Total : $18.00 USD</span>
+        </div> 
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+.product-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+.offer{
+    background-color: #ff4081;
+    color: white;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+.option {
+    position: relative;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 34%;
+}
+
+.details {
+    display: none;
+}
+
+.option:target .details {
+    display: block;
+}
+.add-to-cart {
+    background-color: #ff6b81;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    width: 35%;
+    margin: 20px 0;
+    font-weight: bold;
+    margin-left: 33%;
+}
+.add-to-cart:before {
+    content: "+";
+    margin-right: 10px;
+    font-weight: bold;
+}
+.add-to-cart:hover {
+    background-color: #ff5a71;
+}
+.total-delivery {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.free-delivery {
+    color: #ff6b81;
+}
+
+#total-price {
+    color: black;
+    margin-right: 20px;
+}
+.total{
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    display: inline-block;
+    width: 35%;
+    margin: 20px 0;
+    margin-left: 30%;
+}
+.most-popular {
+    position: absolute;
+    top: -10px;
+    right: 10px; 
+    background-color: #ff4081; 
+    color: white;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.option.active .most-popular {
+    display: block;
+}
+
+.option.inactive .most-popular {
+    display: none;
+}
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    float: inline-end;
+    margin-right: 20px;
+}
+.depricate{
+    font-size: 14px;
+    float: inline-end;
+    margin-right: 20px;
+    color: rgb(122, 120, 120);
+}
+.radio-btn{
+    position: absolute;
+    opacity: 0;
+}
+.radio-btn:checked + .checkmark {
+    background-color: #ff6b81;
+    border-color: #ff6b81;
+
+}
+.checkmark {
+    position: relative;
+    float: left;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.radio-btn:checked + .checkmark:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+.size-select{
+    padding: 10px;
+    margin-left: 20px;
+    width: 26%;
+    text-align: center;
+    word-spacing: 49px;
+}
+
+select{
+    margin-left: 20px;
+    width: 70px;
+}
