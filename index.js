@@ -1,6 +1,7 @@
 const options = document.querySelectorAll('.option');
 const totalPriceElement = document.getElementById('total-price');
 
+//Middle box default open
 function setDefaultOption() {
     const defaultOption = document.querySelector('.option.default-selected');
     if (defaultOption) {
@@ -14,6 +15,7 @@ function setDefaultOption() {
 }
 
 options.forEach(option => {
+    //onclick function
     option.addEventListener('click', () => {
         options.forEach(otherOption => {
             if (otherOption !== option) {
